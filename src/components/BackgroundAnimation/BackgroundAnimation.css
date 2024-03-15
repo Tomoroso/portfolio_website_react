@@ -1,0 +1,110 @@
+#svg {
+  width: 600px;
+  height: 400px
+}
+
+#packman {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  position: relative;
+  animation: pulse 2s infinite;
+  transition: 10s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0) translate(-100px, -100px);
+  }
+  50% {
+    transform: scale(6) translate(100px, 200px);
+  }
+  100% {
+    transform: scale(100) translate(200px, 200px);
+  }
+}
+#packman2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  position: relative;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0) translate(-100px, -100px);
+  }
+  50% {
+    transform: scale(6) translate(100px, 200px);
+  }
+  100% {
+    transform: scale(10) translate(200px, 200px);
+  }
+}
+#packman3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  position: relative;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0) translate(-100px, -100px);
+  }
+  50% {
+    transform: scale(6) translate(100px, 200px);
+  }
+  100% {
+    transform: scale(10) translate(200px, 200px);
+  }
+}
+#packman4 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  position: relative;
+  animation: pulse 6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0) translate(-100px, -100px);
+  }
+  50% {
+    transform: scale(6) translate(100px, 200px);
+  }
+  100% {
+    transform: scale(10) translate(200px, 200px);
+  }
+}
+
+
+  #the-rectangle {
+    width: 120px;
+    height: 120px;
+    background-color: #FFC107;
+    border-radius: 50%;
+    position: relative;
+    animation: orbit-saturn 5s infinite ease-in-out;
+    transform-origin: center;
+  }
+  
+  @keyframes orbit-saturn {
+    0% {
+      transform: rotate(0deg) translateX(150px) rotate(0deg) scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(.5turn) translateX(120px) rotate(-1turn) scale(2);
+      opacity: 0;
+    }
+  }
+
+

@@ -1,0 +1,131 @@
+.timeline__main-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    color: white;
+    margin-top: 2rem;
+}
+
+.timeline__main-container p, h3 {
+    font-size: 16px;
+}
+
+.timeline__content {
+    max-width: 1040px;
+    
+    padding: 0rem;
+    display: flex;
+    justify-content: space-between; 
+  
+    margin-left: 32px;
+    &:first-of-type{
+      margin-left: 0px;
+    }
+    margin-bottom: 80px; 
+}
+
+.timeline__content div {
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(28, 70, 57);
+    padding: 0 1rem;
+    margin: 2px;
+    
+}
+
+.timeline__content p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.75);
+    padding-right: 16px; 
+} 
+
+
+@media screen and (max-width: 768px) {
+    .timeline__content {
+        width: 95%;
+        left: 5px;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        
+        
+        margin-bottom: 8px;
+        position: relative;
+    }
+
+    .timeline__main-container {
+        position: relative;
+    }
+
+    .timeline__main-container::before,
+    .timeline__main-container::after {
+        content: "";
+        position: absolute;
+        bottom: 9%;
+        width: 5px;
+        height: 20%;
+        pointer-events: none;
+    }
+
+    .timeline__main-container::before {
+        left: 0;
+        content: "<";
+        font-size: 24px;
+        animation: slideRight 1s infinite alternate;
+    }
+
+    @keyframes slideRight {
+        0% {
+          transform: translateX(-20px);
+        }
+        100% {
+          transform: translateX(-10px); 
+        }
+      }
+
+    .timeline__main-container::after {
+        right: 0;
+        content: ">";
+        font-size: 24px;
+        animation: slideLeft 1s infinite alternate;
+    }
+
+    @keyframes slideLeft {
+        0% {
+          transform: translateX(5px);
+        }
+        100% {
+          transform: translateX(-5px);
+        }
+      }
+
+    .timeline__content div {
+        display: inline-block;
+       
+        
+    }
+
+    .timeline__content p {
+        width: 100%;
+        font-size: 12px; 
+        line-height: 18px;
+        padding-right: 32px;
+        white-space: wrap;
+    }
+} 
+
+@media screen and (max-width: 450px) {
+    .timeline__main-container::before,
+    .timeline__main-container::after {
+        bottom: 7%;
+    }
+
+    
+    .timeline__main-container {
+        width: 90vw;
+    }
+}
+

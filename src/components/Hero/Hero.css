@@ -1,0 +1,47 @@
+.hero__left {
+    width: 45%;
+}
+
+.hero__left p {
+  width: 80%;
+  font-size: 18px; 
+}
+
+.hero__left button {
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: #d0cfd0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(102, 131, 102);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero__left button:hover {
+  background-color: rgb(52, 94, 52);
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 450px) {
+  .hero__left {
+    width: 100%;
+    font-size: 12px;
+   
+}
+  .hero__left p {
+    width: 90%;
+    font-size: 16px;
+}
+
+}
+
+@media screen and (max-width: 380px) {
+  .hero__left p {
+    width: 100%;
+    font-size: 16px;
+}
+}
